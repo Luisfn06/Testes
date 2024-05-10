@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="input-container">
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" placeholder="Digite o valor a ser convertido">
+        </div>
+        <div class="input-container">
+            <label for="from">De:</label>
+            <select id="from">
+                <option value="BRL">Real Brasileiro (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <!-- Adicione mais moedas aqui -->
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="to">Para:</label>
+            <select id="to">
+                <option value="BRL">Real Brasileiro (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <!-- Adicione mais moedas aqui -->
+            </select>
+        </div>
+        <button onclick="convertCurrency()">Converter</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
