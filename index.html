@@ -17,6 +17,7 @@
 
                 let valor = parseFloat($('#valor').val());
                 let opcoes = $('#opcoes').val();
+                let opcoes2 = $('#opcoes2').val();
                 let dolar = $('#dolar').val();
                 let lene = $('#lene').val();
                 let libra = $('#libra').val();
@@ -64,10 +65,19 @@
     <div class="card position-absolute top-50 start-50 translate-middle" style="width: 18rem;">
         <div class="card-body">
             <form action="" id="form">
-                <label for="numer">Qual o valor em reais?</label><br>
+               
                 <input required type="number" name="valor" id="valor" placeholder="0,00" style="text-align: right;"
-                    min="1">
-                <select name="opcoes" id="opcoes">
+                    min="1"><br>
+                    <label for="numer">De:</label><br>
+                    <select name="opcoes" id="opcoes">
+                        <option value="dolar" id="dolar">Dolar Americano</option>
+                        <option value="euro" id="euro">Euro</option>
+                        <option value="lene" id="lene">Iene</option>
+                        <option value="libra" id="libra">Libra Esterlina</option>
+                        <option value="franco" id="franco">Franco Suíço</option>
+                    </select><br>
+                    <label for="numer">Para:</label><br>
+                <select name="opcoes2" id="opcoes2">
                     <option value="dolar" id="dolar">Dolar Americano</option>
                     <option value="euro" id="euro">Euro</option>
                     <option value="lene" id="lene">Iene</option>
