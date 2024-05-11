@@ -1,4 +1,4 @@
-// Dados das taxas de câmbio (exemplo)
+
 const exchangeRates = {
     BRL: {
         USD: 0.1938849,//
@@ -15,16 +15,16 @@ const exchangeRates = {
         CHF: 0.907//
     },
     EUR: {
-        BRL: 6.68,
+        BRL: 5.542,//
         USD:  1.0771,//
-        JPY: 155.68,//
-        GBP: 0.84,
+        JPY: 167.8500092,//
+        GBP: 0.0051233,//
         CHF: 1.04
     },
     JPY: {
-        BRL: 0.051,
+        BRL: 0.03302,//
         USD: 0.0064234,//
-        EUR: 0.0075,
+        EUR: 0.0059577,
         GBP: 0.0063,
         CHF: 0.0077
     },
@@ -32,7 +32,7 @@ const exchangeRates = {
         BRL:  6.450198,
         USD: 1.2506,//
         EUR: 1.19,
-        JPY: 158.31,
+        JPY: 195.1866961,//
         CHF: 1.23
     },
     CHF: {
@@ -44,7 +44,7 @@ const exchangeRates = {
     }
 };
 
-// Função para realizar a conversão de moedas
+
 function convertCurrency() {
     const amount = parseFloat(document.getElementById('amount').value);
     const fromCurrency = document.getElementById('from').value;
